@@ -1,0 +1,119 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.big-heading,
+.brand,
+.btn {
+  font-family: "Abril Fatface", cursive;
+}
+
+.btn {
+  background-color: #0e8782;
+}
+.big-heading {
+  color: #fefdf7;
+  margin-bottom: 1.5rem;
+}
+.brand {
+  font-size: 1.6rem;
+}
+
+.toggleBtn:hover svg path,
+.toggleBtn:hover {
+  color: #0e8782;
+  fill: #0e8782;
+}
+nav a {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Hero */
+.hero {
+  background-image: url("assets/beans-grinder.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: auto;
+}
+
+/* Collection */
+.collection {
+  height: auto;
+}
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.collection-title {
+  text-align: center;
+  font-size: 180px;
+  background: -webkit-linear-gradient(#333, #eee);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Cta */
+.cta {
+  background-image: url("assets/old-black-background-grunge-texture-dark-wallpaper-blackboard-chalkboard-room-wall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: auto;
+}
+
+/* Order Hero */
+.order_hero {
+  background-image: url("assets/pexels-kevin-menajang-982612.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 450px;
+  width: auto;
+}
+
+/* Create Order */
+input[type="radio"] {
+  display: none;
+}
+label {
+  color: rgb(99, 95, 95);
+}
+input[type="radio"]:checked + label {
+  background: #0e8684;
+  border-color: rgb(219, 216, 216);
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .collection-title {
+    font-size: 90px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .hero {
+    background-image: url("assets/coffe-bean-mobile.jpg");
+    /* height: 600; */
+  }
+  .big-heading {
+    color: rgb(0, 0, 0);
+    color: rgba(75, 85, 99, 0.5);
+  }
+  .collection-title {
+    font-size: 60px;
+  }
+}
